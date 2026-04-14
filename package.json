@@ -6,5 +6,8 @@
     "skills": ["./skills"],
     "prompts": ["./prompts"],
     "themes": ["./themes"]
+  },
+  "sharedDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
   }
 }
