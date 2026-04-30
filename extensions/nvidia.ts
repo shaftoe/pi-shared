@@ -15,6 +15,20 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 128000,
         maxTokens: 8192,
       },
+      {
+        id: "mistralai/mistral-medium-3.5-128b",
+        name: "Mistral Medium 3.5 128B (via NVIDIA)",
+        reasoning: true,
+        input: ["text", "image"],
+        cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+        contextWindow: 128000,
+        maxTokens: 128000,
+        compat: {
+          supportsDeveloperRole: false,
+          supportsReasoningEffort: true,
+          thinkingFormat: "mistral",
+        },
+      },
     ],
   });
 }
