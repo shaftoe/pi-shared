@@ -7,7 +7,7 @@
     "prompts": ["./prompts"],
     "themes": ["./themes"]
   },
-  "sharedDependencies": {
-    "@mariozechner/pi-coding-agent": "*"
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "^0.72.0"
   }
 }
