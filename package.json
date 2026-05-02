@@ -8,6 +8,6 @@
     "themes": ["./themes"]
   },
   "devDependencies": {
-    "@mariozechner/pi-coding-agent": "^0.72.0"
+    "@mariozechner/pi-coding-agent": "^0.72.1"
   }
 }
