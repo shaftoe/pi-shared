@@ -14,6 +14,14 @@ export default function (pi: ExtensionAPI) {
 				cost: { input: 1.74, output: 3.48, cacheRead: 0.145, cacheWrite: 0 },
 				contextWindow: 1000000,
 				maxTokens: 384000,
+				thinkingLevelMap: {
+					off: null,
+					minimal: null,
+					low: "low",
+					medium: "medium",
+					high: "high",
+					xhigh: "max",
+				},
 				compat: {
 					supportsDeveloperRole: false,
 					supportsReasoningEffort: true,
@@ -28,6 +36,14 @@ export default function (pi: ExtensionAPI) {
 				cost: { input: 0.14, output: 0.28, cacheRead: 0.028, cacheWrite: 0 },
 				contextWindow: 1000000,
 				maxTokens: 384000,
+				thinkingLevelMap: {
+					off: null,
+					minimal: null,
+					low: "low",
+					medium: "medium",
+					high: "high",
+					xhigh: "max",
+				},
 				compat: {
 					supportsDeveloperRole: false,
 					supportsReasoningEffort: true,

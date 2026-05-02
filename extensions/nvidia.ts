@@ -23,18 +23,20 @@ export default function (pi: ExtensionAPI) {
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
         contextWindow: 128000,
         maxTokens: 128000,
+        // Mistral via NVIDIA only supports 'none' and 'high' for reasoning_effort.
+        // Map pi thinking levels to API values; null hides unsupported levels.
+        thinkingLevelMap: {
+          off: null,
+          minimal: "none",
+          low: null,
+          medium: null,
+          high: "high",
+          xhigh: null,
+        },
         compat: {
           supportsDeveloperRole: false,
           supportsReasoningEffort: true,
-          // Mistral via NVIDIA only supports 'none' and 'high' for reasoning_effort.
-          // Map pi thinking levels to API values; levels not in map default to their raw value.
-          reasoningEffortMap: {
-            minimal: "none",
-            low: "high", // Map 'low' to 'high' since 'low' is not supported
-            medium: "high", // Map 'medium' to 'high' since 'medium' is not supported
-            high: "high",
-          },
-        } as const,
+        },
       },
     ],
   });
