@@ -3,7 +3,7 @@ import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 export default function (pi: ExtensionAPI) {
   pi.registerProvider("nvidia", {
     baseUrl: "https://integrate.api.nvidia.com/v1",
-    apiKey: "NVIDIA_API_KEY",
+    apiKey: "$NVIDIA_API_KEY",
     api: "openai-completions",
     models: [
       {
