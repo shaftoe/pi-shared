@@ -8,6 +8,6 @@
     "themes": ["./themes"]
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "^0.78.0"
+    "@earendil-works/pi-coding-agent": "^0.78.1"
   }
 }
